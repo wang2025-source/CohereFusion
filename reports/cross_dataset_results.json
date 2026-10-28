@@ -1,0 +1,473 @@
+{
+  "title": "Cross-dataset results on MSRS, RoadScene, and LLVIP",
+  "source": {
+    "document": "CohereFusion_English.pdf",
+    "table": "III",
+    "type": "manuscript-reported"
+  },
+  "metrics": [
+    "EN",
+    "SD",
+    "SF",
+    "AG",
+    "SCD",
+    "VIF"
+  ],
+  "datasets": [
+    {
+      "key": "msrs",
+      "name": "MSRS"
+    },
+    {
+      "key": "roadscene",
+      "name": "RoadScene"
+    },
+    {
+      "key": "llvip",
+      "name": "LLVIP"
+    }
+  ],
+  "methods": [
+    {
+      "name": "U2Fusion",
+      "venue": "TPAMI 2022",
+      "text_input": false,
+      "results": {
+        "msrs": {
+          "EN": 6.5,
+          "SD": 42.65,
+          "SF": 10.62,
+          "AG": 3.2,
+          "SCD": 1.29,
+          "VIF": 1.0
+        },
+        "roadscene": {
+          "EN": 6.84,
+          "SD": 32.66,
+          "SF": 7.54,
+          "AG": 3.28,
+          "SCD": 1.38,
+          "VIF": 0.741
+        },
+        "llvip": {
+          "EN": 6.58,
+          "SD": 33.47,
+          "SF": 11.3,
+          "AG": 3.46,
+          "SCD": 1.33,
+          "VIF": 0.702
+        }
+      },
+      "ranks": {
+        "msrs": {},
+        "roadscene": {},
+        "llvip": {}
+      }
+    },
+    {
+      "name": "TarDAL",
+      "venue": "CVPR 2022",
+      "text_input": false,
+      "results": {
+        "msrs": {
+          "EN": 6.34,
+          "SD": 35.46,
+          "SF": 9.87,
+          "AG": 3.11,
+          "SCD": 1.48,
+          "VIF": 0.67
+        },
+        "roadscene": {
+          "EN": 6.98,
+          "SD": 40.72,
+          "SF": 6.44,
+          "AG": 2.69,
+          "SCD": 1.58,
+          "VIF": 0.762
+        },
+        "llvip": {
+          "EN": 7.29,
+          "SD": 50.14,
+          "SF": 13.32,
+          "AG": 3.56,
+          "SCD": 1.33,
+          "VIF": 0.63
+        }
+      },
+      "ranks": {
+        "msrs": {},
+        "roadscene": {},
+        "llvip": {
+          "SD": "best"
+        }
+      }
+    },
+    {
+      "name": "DDFM",
+      "venue": "ICCV 2023",
+      "text_input": false,
+      "results": {
+        "msrs": {
+          "EN": 6.401,
+          "SD": 36.47,
+          "SF": 10.92,
+          "AG": 3.57,
+          "SCD": 1.41,
+          "VIF": 0.901
+        },
+        "roadscene": {
+          "EN": 7.112,
+          "SD": 45.37,
+          "SF": 9.63,
+          "AG": 3.89,
+          "SCD": 1.59,
+          "VIF": 0.821
+        },
+        "llvip": {
+          "EN": 7.118,
+          "SD": 43.68,
+          "SF": 13.94,
+          "AG": 4.05,
+          "SCD": 1.41,
+          "VIF": 0.751
+        }
+      },
+      "ranks": {
+        "msrs": {},
+        "roadscene": {},
+        "llvip": {}
+      }
+    },
+    {
+      "name": "SHIP",
+      "venue": "CVPR 2024",
+      "text_input": false,
+      "results": {
+        "msrs": {
+          "EN": 6.716,
+          "SD": 44.28,
+          "SF": 13.21,
+          "AG": 4.18,
+          "SCD": 1.681,
+          "VIF": 1.012
+        },
+        "roadscene": {
+          "EN": 7.181,
+          "SD": 47.62,
+          "SF": 11.42,
+          "AG": 4.37,
+          "SCD": 1.681,
+          "VIF": 0.873
+        },
+        "llvip": {
+          "EN": 7.244,
+          "SD": 46.763,
+          "SF": 15.18,
+          "AG": 4.62,
+          "SCD": 1.562,
+          "VIF": 0.821
+        }
+      },
+      "ranks": {
+        "msrs": {},
+        "roadscene": {},
+        "llvip": {}
+      }
+    },
+    {
+      "name": "TEDFusion",
+      "venue": "ICML 2026",
+      "text_input": false,
+      "results": {
+        "msrs": {
+          "EN": 6.74,
+          "SD": 42.9,
+          "SF": 12.22,
+          "AG": 4.12,
+          "SCD": 1.66,
+          "VIF": 0.954
+        },
+        "roadscene": {
+          "EN": 7.07,
+          "SD": 60.85,
+          "SF": 13.88,
+          "AG": 4.79,
+          "SCD": 1.75,
+          "VIF": 0.908
+        },
+        "llvip": {
+          "EN": 7.36,
+          "SD": 48.75,
+          "SF": 15.7,
+          "AG": 4.83,
+          "SCD": 1.69,
+          "VIF": 0.891
+        }
+      },
+      "ranks": {
+        "msrs": {},
+        "roadscene": {
+          "SD": "best"
+        },
+        "llvip": {}
+      }
+    },
+    {
+      "name": "TextFusion",
+      "venue": "Inf. Fusion 2025",
+      "text_input": true,
+      "results": {
+        "msrs": {
+          "EN": 6.23,
+          "SD": 40.85,
+          "SF": 10.32,
+          "AG": 3.04,
+          "SCD": 1.56,
+          "VIF": 0.892
+        },
+        "roadscene": {
+          "EN": 6.98,
+          "SD": 40.49,
+          "SF": 6.7,
+          "AG": 2.64,
+          "SCD": 1.53,
+          "VIF": 0.834
+        },
+        "llvip": {
+          "EN": 6.65,
+          "SD": 37.3,
+          "SF": 11.22,
+          "AG": 3.12,
+          "SCD": 1.22,
+          "VIF": 0.781
+        }
+      },
+      "ranks": {
+        "msrs": {},
+        "roadscene": {},
+        "llvip": {}
+      }
+    },
+    {
+      "name": "Text-IF",
+      "venue": "CVPR 2024",
+      "text_input": true,
+      "results": {
+        "msrs": {
+          "EN": 6.72,
+          "SD": 44.03,
+          "SF": 11.63,
+          "AG": 3.84,
+          "SCD": 1.65,
+          "VIF": 1.046
+        },
+        "roadscene": {
+          "EN": 7.31,
+          "SD": 46.7,
+          "SF": 10.39,
+          "AG": 4.42,
+          "SCD": 1.48,
+          "VIF": 0.902
+        },
+        "llvip": {
+          "EN": 7.24,
+          "SD": 45.38,
+          "SF": 16.29,
+          "AG": 4.81,
+          "SCD": 1.46,
+          "VIF": 0.884
+        }
+      },
+      "ranks": {
+        "msrs": {
+          "VIF": "second"
+        },
+        "roadscene": {},
+        "llvip": {}
+      }
+    },
+    {
+      "name": "GSU-Fusion",
+      "venue": "Inf. Fusion 2026",
+      "text_input": true,
+      "results": {
+        "msrs": {
+          "EN": 6.7,
+          "SD": 45.71,
+          "SF": 13.88,
+          "AG": 4.5,
+          "SCD": 1.74,
+          "VIF": 1.0
+        },
+        "roadscene": {
+          "EN": 7.284,
+          "SD": 49.52,
+          "SF": 12.96,
+          "AG": 4.61,
+          "SCD": 1.71,
+          "VIF": 0.915
+        },
+        "llvip": {
+          "EN": 7.29,
+          "SD": 48.43,
+          "SF": 17.34,
+          "AG": 4.94,
+          "SCD": 1.56,
+          "VIF": 0.88
+        }
+      },
+      "ranks": {
+        "msrs": {},
+        "roadscene": {},
+        "llvip": {}
+      }
+    },
+    {
+      "name": "TSANet",
+      "venue": "TIP 2025",
+      "text_input": true,
+      "results": {
+        "msrs": {
+          "EN": 6.781,
+          "SD": 45.36,
+          "SF": 13.57,
+          "AG": 4.39,
+          "SCD": 1.723,
+          "VIF": 1.021
+        },
+        "roadscene": {
+          "EN": 7.321,
+          "SD": 52.48,
+          "SF": 13.75,
+          "AG": 4.72,
+          "SCD": 1.771,
+          "VIF": 0.934
+        },
+        "llvip": {
+          "EN": 7.347,
+          "SD": 48.92,
+          "SF": 17.16,
+          "AG": 4.96,
+          "SCD": 1.671,
+          "VIF": 0.902
+        }
+      },
+      "ranks": {
+        "msrs": {},
+        "roadscene": {},
+        "llvip": {}
+      }
+    },
+    {
+      "name": "GText-IF",
+      "venue": "TPAMI 2026",
+      "text_input": true,
+      "results": {
+        "msrs": {
+          "EN": 6.903,
+          "SD": 46.42,
+          "SF": 14.16,
+          "AG": 4.57,
+          "SCD": 1.754,
+          "VIF": 1.052
+        },
+        "roadscene": {
+          "EN": 7.352,
+          "SD": 56.73,
+          "SF": 14.17,
+          "AG": 4.91,
+          "SCD": 1.793,
+          "VIF": 0.972
+        },
+        "llvip": {
+          "EN": 7.391,
+          "SD": 49.18,
+          "SF": 17.57,
+          "AG": 5.03,
+          "SCD": 1.704,
+          "VIF": 0.936
+        }
+      },
+      "ranks": {
+        "msrs": {
+          "EN": "second",
+          "SD": "second",
+          "SF": "second",
+          "AG": "second",
+          "SCD": "second",
+          "VIF": "best"
+        },
+        "roadscene": {
+          "EN": "second",
+          "SF": "second",
+          "AG": "second",
+          "SCD": "second",
+          "VIF": "best"
+        },
+        "llvip": {
+          "EN": "second",
+          "SF": "second",
+          "AG": "second",
+          "SCD": "second",
+          "VIF": "best"
+        }
+      }
+    },
+    {
+      "name": "CohereFusion",
+      "venue": "--",
+      "text_input": true,
+      "results": {
+        "msrs": {
+          "EN": 6.972,
+          "SD": 47.31,
+          "SF": 14.76,
+          "AG": 4.71,
+          "SCD": 1.792,
+          "VIF": 1.041
+        },
+        "roadscene": {
+          "EN": 7.418,
+          "SD": 59.96,
+          "SF": 14.53,
+          "AG": 5.03,
+          "SCD": 1.824,
+          "VIF": 0.961
+        },
+        "llvip": {
+          "EN": 7.436,
+          "SD": 50.12,
+          "SF": 17.89,
+          "AG": 5.13,
+          "SCD": 1.742,
+          "VIF": 0.921
+        }
+      },
+      "ranks": {
+        "msrs": {
+          "EN": "best",
+          "SD": "best",
+          "SF": "best",
+          "AG": "best",
+          "SCD": "best"
+        },
+        "roadscene": {
+          "EN": "best",
+          "SD": "second",
+          "SF": "best",
+          "AG": "best",
+          "SCD": "best",
+          "VIF": "second"
+        },
+        "llvip": {
+          "EN": "best",
+          "SD": "second",
+          "SF": "best",
+          "AG": "best",
+          "SCD": "best",
+          "VIF": "second"
+        }
+      }
+    }
+  ]
+}
